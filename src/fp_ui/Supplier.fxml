@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="insert" prefHeight="494.0" prefWidth="718.0" xmlns="http://javafx.com/javafx/8.0.231"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="fp_ui.SupplierController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69"/>
+        <TableView fx:id="tableSupplier" layoutX="309.0" layoutY="14.0" prefHeight="289.0" prefWidth="311.0">
+            <columns>
+                <TableColumn fx:id="supplier_id" prefWidth="160.0" text="Id"/>
+                <TableColumn fx:id="product_name" minWidth="0.0" prefWidth="0.0" text="Name"/>
+                <TableColumn fx:id="supplier_name" prefWidth="160.0" text="Name"/>
+            </columns>
+        </TableView>
+        <Button fx:id="btn_generate" layoutX="492.0" layoutY="317.0" mnemonicParsing="false"
+                onAction="#handleButtonAction" prefHeight="25.0" prefWidth="128.0" text="Refresh"/>
+        <Button fx:id="insertData" layoutX="119.0" layoutY="197.0" mnemonicParsing="false" onAction="#insertData"
+                prefHeight="35.0" prefWidth="163.0" text="Insert">
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+        </Button>
+        <Button fx:id="deleteData" layoutX="492.0" layoutY="353.0" mnemonicParsing="false" onAction="#deleteData"
+                prefHeight="25.0" prefWidth="128.0" text="Delete">
+            <font>
+                <Font name="System Bold" size="12.0"/>
+            </font>
+        </Button>
+        <TextField fx:id="id" layoutX="119.0" layoutY="108.0" prefHeight="25.0" prefWidth="163.0"/>
+        <Text layoutX="40.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supplier ID:"
+              wrappingWidth="89.01693725585938">
+            <font>
+                <Font name="System Bold Italic" size="12.0"/>
+            </font>
+        </Text>
+        <TextField fx:id="name" layoutX="119.0" layoutY="146.0" prefHeight="25.0" prefWidth="163.0"/>
+        <Text layoutX="19.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supplier Name:">
+            <font>
+                <Font name="System Bold Italic" size="12.0"/>
+            </font>
+        </Text>
+        <Button fx:id="updateData" layoutX="309.0" layoutY="317.0" mnemonicParsing="false" onAction="#updateData"
+                prefHeight="25.0" prefWidth="128.0" text="Update"/>
+        <Button fx:id="btnBack" layoutX="15.0" layoutY="455.0" mnemonicParsing="false"
+                onMouseClicked="#backButtonAction" text="BACK">
+            <font>
+                <Font name="System Bold Italic" size="12.0"/>
+            </font>
+        </Button>
+        <Label layoutX="100.0" layoutY="35.0" text="SUPPLIER" textFill="#5900ff">
+            <font>
+                <Font name="System Bold" size="24.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
