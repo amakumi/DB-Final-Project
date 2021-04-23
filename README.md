@@ -4,9 +4,9 @@
 A Pharmacy Management to manage stocks and products enlisted in the pharmacy itself. 
 
 
-Members:
+### Members:
 
-Chan Elizabeth W
-Marco Melvern
-Michael Edward
-Naman Vohra
+Chan Elizabeth W  
+Marco Melvern  
+Michael Edward  
+Naman Vohra  
